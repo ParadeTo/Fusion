@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Fusion
+{
+    public partial class MainForm : Form
+    {
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_SpecFusion_Click(object sender, EventArgs e)
+        {
+            SpecFusionForm SpecFusionForm = new SpecFusionForm();
+            SpecFusionForm.Show();
+        }
+
+        private void btn_TSFusion_Click(object sender, EventArgs e)
+        {
+            TSFusionForm TSFusionForm = new TSFusionForm();
+            TSFusionForm.Show();
+        }
+
+
+    }
+}
